@@ -1,0 +1,13 @@
+models:
+  - name: fct_events
+    description: This model contains information about Bingeflix event.
+    meta:
+      priority: high
+      owner:
+        - lindsay
+    columns:
+      - name: event_id
+        description: Unique key of this table
+        tests:
+          - not_null
+          - unique

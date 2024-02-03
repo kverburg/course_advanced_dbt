@@ -2,6 +2,15 @@ sources:
   - name: ads_platform
     schema: bingeflix
     database: raw
+    description: This is the description of the ads platform source
     tables:
       - name: daily_ads
         identifier: ads
+        description: Source table for ads
+        columns:
+          - name: date
+          - name: campaign_id
+          - name: spend
+          - name: cpm
+          - name: ctr
+
