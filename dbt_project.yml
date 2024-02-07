@@ -23,7 +23,7 @@ models:
   course_advanced_dbt:
     +materialized: view
     +grants:
-      select: ['transformer', 'reporter']
+      select: ['transformer', 'reporter','transformer_dev']
     
     staging:
       +schema: staging
