@@ -11,3 +11,7 @@ models:
         tests:
           - not_null
           - unique
+      - name: session_id
+      - name: event_name
+      - name: created_at
+      - name: user_id
