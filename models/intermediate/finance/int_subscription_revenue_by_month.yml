@@ -1,0 +1,11 @@
+models:
+  - name: int_subscription_revenue_by_month
+    description: Intermediate model used in the mrr model
+    columns:
+      - name: date_month
+        description: The calendar date.
+        tests:
+          - not_null
+      - name: user_id
+        tests:
+          - unique

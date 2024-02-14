@@ -1,0 +1,11 @@
+selectors:
+  - name: everything_except_the_unit_testing
+    description: "All nodes except the monthly unit tests"
+    default: true
+    definition:
+      union:
+        - method: fqn
+          value: "*"
+        - exclude:
+            - method: tag
+              value: unit_testing

@@ -1,0 +1,9 @@
+models:
+  - name: int_subscription_periods
+    description: Intermediate model used in the mrr model
+    columns:
+      - name: subscription_id
+        description: The calendar date.
+        tests:
+          - not_null
+          - unique
